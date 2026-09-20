@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Game Haven — Contact</title>
+  <link href="contact.css" rel="stylesheet">
+</head>
+<body>
+  <!--back to top button -->
+  <a id="top"></a>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <h1 id="site-title">Game Haven</h1>
+    <nav class="navbar" aria-label="Main Navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="favorites.html">Favorites</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="honor.html">Honor Roll</a>
+      <a class="nav-link" href="characters.html">Characters</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main" class="container">
+    <h2>Contact Me</h2>
+    <p class="lead">Want to talk about games? Reach me at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+
+    <!-- Contact form -->
+    <form class="contact-form" action="#" method="post" enctype="multipart/form-data" novalidate>
+      <!-- text input -->
+      <label for="name">Name (text)
+        <input id="name" name="name" type="text" placeholder="Your name" required>
+      </label>
+
+      <!-- email input -->
+      <label for="email">Email (email)
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      </label>
+
+      <!-- tel input -->
+      <label for="phone">Phone (tel)
+        <input id="phone" name="phone" type="tel" placeholder="+1 (555) 555-5555">
+      </label>
+
+      <!-- url input -->
+      <label for="profile">Profile / Discord (url)
+        <input id="profile" name="profile" type="url" placeholder="https://">
+      </label>
+
+      <!-- number input -->
+      <label for="hours">Hours gaming per week (number)
+        <input id="hours" name="hours" type="number" min="0" max="168" value="10">
+      </label>
+
+      <!-- date input -->
+      <label for="birthday">Birthday (date)
+        <input id="birthday" name="birthday" type="date">
+      </label>
+
+      <!-- time input -->
+      <label for="time">Best time to reach you (time)
+        <input id="time" name="time" type="time">
+      </label>
+
+      <!-- color input -->
+      <label for="color">Favorite color (color)
+        <input id="color" name="color" type="color" value="#00aaff">
+      </label>
+
+      <!-- file upload -->
+      <label for="screenshot">Upload a screenshot (file)
+        <input id="screenshot" name="screenshot" type="file" accept="image/*">
+      </label>
+
+      <!-- radio buttons -->
+      <fieldset>
+        <legend>Preferred platform (radio)</legend>
+        <label><input type="radio" name="platform" value="pc" checked> PC</label>
+        <label><input type="radio" name="platform" value="console"> Console</label>
+        <label><input type="radio" name="platform" value="mobile"> Mobile</label>
+      </fieldset>
+
+      <!-- checkboxes -->
+      <fieldset>
+        <legend>Subscribe / preferences (checkbox)</legend>
+        <label><input type="checkbox" name="newsletter" value="yes"> Newsletter</label>
+        <label><input type="checkbox" name="beta" value="yes"> Beta invites</label>
+      </fieldset>
+
+      <!-- range slider -->
+      <label for="rating">Rate my website (range)</label>
+      <input id="rating" name="rating" type="range" min="0" max="10" value="8">
+
+      <!-- select dropdown -->
+      <label for="genre">Favorite genre (select)
+        <select id="genre" name="genre">
+          <option value="">Choose...</option>
+          <option>Action</option>
+          <option>RPG</option>
+          <option>Indie</option>
+          <option>Puzzle</option>
+        </select>
+      </label>
+
+      <!-- large message -->
+      <label for="message">Message (textarea)
+        <textarea id="message" name="message" rows="5" placeholder="Tell me about what games you like..."></textarea>
+      </label>
+
+      <!-- submit button -->
+      <div class="form-actions">
+        <button type="submit">Send Message</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Game Haven</p>
+  </footer>
+  <!-- Fixed chat button and back to top button -->
+  <a href="#top" class="top-btn">TOP</a>
+</body>
+</html>
